@@ -31,7 +31,7 @@ public class AP_Stages extends FillComponent {
 
     @Then("^text for stage 2 is shown$")
     public void text_for_stage_2_is_shown(){
-        String actualTxt = driver.findElement(By.xpath("//*[@id=\"steps__description--1\"]/h3")).getText();
+        String actualTxt = driver.findElement(By.xpath("//*[@id=\"steps__description--1\"]/h1")).getText();
 
         assertEquals(driver.getCurrentUrl(),"https://www.iths.se/ansokan-it-hogskolan/");
         assertEquals("2. Behörighet",actualTxt);

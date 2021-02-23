@@ -3,6 +3,8 @@ package com.it.pop;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class FillComponent extends BaseComponent{
     //Press submit button
     public void pressSkicka(){
@@ -81,5 +83,20 @@ public class FillComponent extends BaseComponent{
         actualColor = String.format("#%02x%02x%02x", hexValue1, hexValue2, hexValue3);
         System.out.println(actualColor);
         return actualColor;
+    }
+
+    //Verify button All Utbildningar
+
+    public void testHomePageAllUtbBtn(){
+        //To see find the next button need to start from home page
+        goToHomePage();
+
+        //Verify Alla utbildningar button
+        driver.findElement(By.xpath(allUttbild)).click();
+ //       String actualTxt = driver.findElement(By.xpath("//*[@id=\"main\"]/div/h1")).getText();
+
+ //       assertEquals(driver.getCurrentUrl(),"https://www.iths.se/courses/");
+ //       assertEquals("Utbildningar",actualTxt);
+
     }
 }

@@ -18,6 +18,7 @@ public class HP_Links extends FillComponent {
     public void user_clicks_on_link_Utbildningar(){
         driver.findElement(By.xpath(utbildningar)).click();
     }
+
     @Then("^page Utbildningar is opened$")
     public void page_Utbildningar_is_opened(){
         String actualTxt = driver.findElement(By.xpath("//*[@id=\"main\"]/div/h1")).getText();
@@ -54,4 +55,6 @@ public class HP_Links extends FillComponent {
         assertEquals("Nyheter",actualTxt);
         teardown();
     }
+
+
 }

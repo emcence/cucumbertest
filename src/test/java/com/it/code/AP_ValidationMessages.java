@@ -1,6 +1,6 @@
 package com.it.code;
 
-import com.it.domasna.FillComponent;
+import com.it.pop.FillComponent;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

@@ -1,6 +1,6 @@
 package com.it.code;
 
-import com.it.domasna.FillComponent;
+import com.it.pop.FillComponent;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -32,10 +32,10 @@ public class HP_Links extends FillComponent {
     }
     @Then("^page OmOss is opened$")
     public void page_OmOss_is_opened(){
-        String actualTxt = driver.findElement(By.xpath("//*[@id=\"page\"]/div/div[2]/div[2]/div[2]/div/h1")).getText();
+        String actualTxt = driver.findElement(By.xpath("//*[@id=\"page\"]/div/div/div[2]/div[2]/div[1]/div[1]/div[1]/h4")).getText();
 
         assertEquals(driver.getCurrentUrl(),"https://www.iths.se/om-oss/");
-        assertEquals("Hos oss startar din IT-karriär",actualTxt);
+        assertEquals("Om oss",actualTxt);
         teardown();
     }
 
@@ -48,6 +48,7 @@ public class HP_Links extends FillComponent {
     @Then("page Nyheter is opened")
     public void page_nyheter_is_opened() {
         String actualTxt = driver.findElement(By.xpath("//*[@id=\"main\"]/div[1]/h1")).getText();
+  //      String actualTxt = driver.findElement(By.xpath("//*[@id=\"main\"]/div[2]/h1")).getText();
 
         assertEquals(driver.getCurrentUrl(),"https://www.iths.se/nyheter/");
         assertEquals("Nyheter",actualTxt);

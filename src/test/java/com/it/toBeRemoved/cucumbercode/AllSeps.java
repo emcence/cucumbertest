@@ -1,12 +1,9 @@
-package com.it.cucumbercode;
+package com.it.toBeRemoved.cucumbercode;
 
-import com.it.domasna.FillComponent;
-import com.it.pop.FillForm;
+import com.it.toBeRemoved.FillForm;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.Select;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

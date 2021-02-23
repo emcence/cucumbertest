@@ -1,4 +1,4 @@
-package com.it.domasna;
+package com.it.pop;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -6,7 +6,7 @@ import org.openqa.selenium.Keys;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TestHomePage extends com.it.domasna.FillComponent {
+public class TestHomePage extends com.it.pop.FillComponent {
     @Test
     public void testHomePageUrlTitle() {
         //Test that url is correct

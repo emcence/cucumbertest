@@ -1,4 +1,4 @@
-package com.it.pop;
+package com.it.toBeRemoved;
 
 import org.junit.jupiter.api.Test;
 
